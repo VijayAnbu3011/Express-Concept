@@ -1,0 +1,32 @@
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Product Name</th>
+            <th scope="col">Product Price</th>
+            <th scope="col">Product Description</th>
+            <th scope="col">Product Edit</th>
+            <th scope="col">Product Delete</th>
+        </tr>
+    </thead>
+    <tbody>
+        {{#each products}}
+        <tr>
+            <th scope="row">{{_id}}</th>
+            <td>{{pName}}</td>
+            <td>{{pPrice}}</td>
+            <td>{{pDesc}}</td>
+            <td>
+                <form method="GET" action="/products/edit-product/{{_id}}">
+                    <button class="btn btn-primary">Edit</button>
+                </form>
+            </td>
+            <td>
+                <form method="GET" action="/products/delete-product/{{_id}}">
+                    <button class="btn btn-danger">Delete</button>
+                </form>
+            </td>
+        </tr>
+        {{/each}}
+    </tbody>
+</table>

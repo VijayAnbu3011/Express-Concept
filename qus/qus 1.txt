@@ -1,0 +1,6 @@
+Mongo Assignment :                                                                                                                                                          waqtd all the emp whose city is bangaluru and works in deptno. 20
+waqtd all the emp whose sal is not equal to 30000
+ waqtd all the emp whose city is not chennai and will not have sal less than 50000
+ waqtd all the emp who are either from bangaluru or chennai
+waqtd all the emp who are not from art street or food street
+ waqtd all the emp whose sal is in between 15000 and 50000
